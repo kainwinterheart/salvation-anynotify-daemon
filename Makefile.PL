@@ -9,7 +9,7 @@ WriteMakefile (
     PREREQ_PM => {
         'Salvation::Method::Signatures' => '0.02',
         'Salvation::DaemonDecl' => 0,
-        'Salvation::AnyNotify' => '0.1',
+        'Salvation::AnyNotify' => '0.01',
     },
     META_MERGE => {
     "meta-spec" => { version => 2 },
