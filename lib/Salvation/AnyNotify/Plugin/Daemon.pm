@@ -9,7 +9,7 @@ use Salvation::DaemonDecl;
 use Salvation::Method::Signatures;
 use Salvation::DaemonDecl::Backend ();
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 method start() {
 
@@ -45,7 +45,7 @@ method run() {
                 warn $@ if $@;
             }
 
-            Salvation::DaemonDecl::Backend -> wait_all_workers( $core -> daemon_meta() );
+            Salvation::DaemonDecl::Backend -> wait_all_workers( $self -> daemon_meta() );
         },
     } );
 
